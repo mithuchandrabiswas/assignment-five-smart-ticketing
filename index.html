@@ -58,9 +58,9 @@
 
   <main>
     <!-- ---------------Banner Section------------- -->
-    <section class="banner-section px-10">
-      <div class="hero min-h-screen" style="background-image: url('./images/banner.png');">
-        <div class="hero-overlay bg-opacity-40"></div>
+    <section class="banner-section px-10 rounded-xl">
+      <div class="hero min-h-screen relative rounded-xl" style="background-image: url('./images/banner.png');">
+        <div class="hero-overlay bg-opacity-40 rounded-xl"></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="max-w-xl">
             <h1 class="mb-5 text-5xl font-bold"> End-to-End Travel with </h1>
@@ -70,11 +70,42 @@
             <a href="#features" class="btn btn-success font-semibold"> Buy Tickets </a>
           </div>
         </div>
+
+        <div class="flex w-10/12 mx-auto absolute -bottom-24 gap-5">
+          <!-- card-1 -->
+          <div class="card card-side bg-white p-5 shadow-lg border-b-4 border-green-500 w-2/6">
+            <figure><img src="./images/people.png" alt="Movie" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl font-bold"> 500K+ </h2>
+              <p class="text-[rgba(104,104,104,0.89) text-base">  Registered users </p>
+            </div>
+          </div>
+
+          <!-- card-2 -->
+          <div class="card card-side bg-white p-5 shadow-lg border-b-4 border-green-500 w-2/6">
+            <figure><img src="./images/ticket-cupon.png" alt="Movie" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl font-bold">  1.7 lacks </h2>
+              <p class="text-[rgba(104,104,104,0.89) text-base">  Tickets sold </p>
+            </div>
+          </div>
+
+          <!-- card-3 -->
+          <div class="card card-side bg-white p-5 shadow-lg border-b-4 border-green-500 w-2/6">
+            <figure><img src="./images/stoppage.png" alt="Movie" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-2xl font-bold"> 80K+ </h2>
+              <p class="text-[rgba(104,104,104,0.89) text-base">  Rental partners </p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
     <!-- --------------Coupon Section-------------- -->
-    <section class="coupon-section px-10 pt-20 font-bold">
+    <section class="coupon-section px-10 pt-36 pb-10 font-bold">
       <h2 class="text-center text-2xl mb-5"> Best offers for you </h2>
       <!-- ======coupon15========== -->
       <div class="flex gap-5">
@@ -110,7 +141,7 @@
     </section>
 
     <!-- --------------Feature Section--------------- -->
-    <section id="features" class="feature-section px-10 py-20">
+    <section id="features" class="feature-section px-10 py-20 border-t-4 border-green-500 rounded-3xl">
       <div class="title-part text-center max-w-2xl mx-auto">
         <h1 class="feature-title text-3xl font-bold"> P.H Paribahan </h1>
         <p class="feature-details text-lg text-[rgba(104,104,104,0.89)] my-5"> Yes, you can run unit tests and view the
