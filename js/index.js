@@ -39,7 +39,6 @@ for (let seatNumber of seatNumbers) {
             const convertedGrandTotalPrice = parseInt(grandPriceText);
             let totalGrandPrice = selectedArray.length * 550;
             document.getElementById('grand-total').innerText = totalGrandPrice;
-            if
 
 
 

@@ -108,12 +108,15 @@
     <section class="coupon-section px-10 pt-36 pb-10 font-bold">
       <h2 class="text-center text-2xl mb-5"> Best offers for you </h2>
       <!-- ======coupon15========== -->
-      <div class="flex gap-5">
-        <div class="coupon15 flex justify-center items-center w-1/2 rounded-xl bg-[#FFBF0F] p-8">
+      <div class="flex gap-5 flex-col md:flex-row">
+        <div class="coupon15 flex justify-center items-center w-1/2 rounded-xl bg-[#FFBF0F] px-8">
           <div class="w-2/3">
             <h1 class="text-3xl text-[030712] font-extrabold"> 15% OFF </h1>
             <h5 class="text-[030712]"> on your next purchase </h5>
             <p class="text-[#4a5881ce]"> use by January 2024 </p>
+          </div>
+          <div class="h-full">
+            <img src="./images/cupon-devider.png" alt="">
           </div>
           <div class="w-1/3">
             <h1 class="text-2xl font-bold"> NEW15 </h1>
@@ -122,11 +125,14 @@
         </div>
 
         <!-- ======coupon20========== -->
-        <div class="coupon20 flex justify-center items-center w-1/2 rounded-xl bg-[#F78C9C] p-8">
+        <div class="coupon20 flex justify-center items-center w-1/2 rounded-xl bg-[#F78C9C] px-8">
           <div class="w-2/3">
             <h1 class="text-3xl text-[030712] font-extrabold"> 20% OFF </h1>
             <h5 class="text-[030712]"> on your next purchase </h5>
             <p class="text-[#4a5881ce]"> use by January 2024 </p>
+          </div>
+          <div class="h-full">
+            <img src="./images/cupon-devider.png" alt="">
           </div>
           <div class="w-1/3">
             <h1 class="text-2xl font-bold"> Couple 20 </h1>
@@ -142,17 +148,17 @@
 
     <!-- --------------Feature Section--------------- -->
     <section id="features" class="feature-section px-10 py-20 border-t-4 border-green-500 rounded-3xl">
+      <!-- =======Feature Bio======= -->
       <div class="title-part text-center max-w-2xl mx-auto">
         <h1 class="feature-title text-3xl font-bold"> P.H Paribahan </h1>
         <p class="feature-details text-lg text-[rgba(104,104,104,0.89)] my-5"> Yes, you can run unit tests and view the
           results directly within the app.The integrated testing features allow for a streamlined. </p>
       </div>
-      <!-- ====Ticket Details==== -->
-      <div class="ticket-details-part flex bg-base-100 rounded-lg mt-10">
+      <!-- ====Ticket Info Details==== -->
+      <div class="flex bg-base-100 rounded-lg mt-10">
 
-        <div class="ticket-details w-3/4">
-
-          <div class="flex justify-between items-center p-6">
+        <div class="w-9/12">
+          <div class="flex justify-between items-center px-6">
             <div class="card card-side">
               <figure><img src="./images/bus-logo.png" alt="Movie" /></figure>
               <div class="card-body">
@@ -165,8 +171,8 @@
                   src="./images/seat-green.png" alt=""> <span id="total-remaining-seat"> 40 </span> Seats left </button>
             </div>
           </div>
-          <!-- ===== Ticket Table===== -->
-          <div class="ticket-table p-5">
+          <!-- ===== Ticket Info Table===== -->
+          <div class="px-5">
             <div class="overflow-x-auto">
               <table class="table bg-slate-50">
                 <!-- head -->
@@ -186,17 +192,21 @@
                   </tr>
                   <!-- row 3 -->
                   <tr>
-                    <td aria-disabled=""><kbd class="p-[18px] rounded-lg bg-slate-200"> Boarding Point - Laxmipur </kbd></td>
-                    <td><kbd class="p-[18px] rounded-lg bg-slate-200"> Dropping Point - Bogura </kbd></td>
-                    <td><kbd class="p-[18px] rounded-lg bg-slate-200"> Est. Time - 11 Hour </kbd></td>
+                    <td><p class="p-[12px] rounded-lg bg-slate-200"> Boarding Point - Laxmipur </p></td>
+                    <td><p class="p-[12px] rounded-lg bg-slate-200"> Dropping Point - Bogura </p></td>
+                    <td><p class="p-[12px] rounded-lg bg-slate-200"> Est. Time - 11 Hour </p></td>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
 
+        <div class="h-full">
+          <img src="./images/info-devider.png" alt="">
+        </div>
+
         <!-- =====Ticket Fix Price (Right Side)======= -->
-        <div class="ticket-price flex justify-center items-center flex-col w-1/4">
+        <div class="ticket-price flex justify-center items-center flex-col w-3/12">
           <div> <img src="./images/fare.png" alt=""> </div>
           <h1 class="text-3xl font-bold"> 550 Taka </h1>
           <p class="text-[rgba(0,0,0,.89)]"> Per Seat </p>
@@ -355,6 +365,10 @@
 
         </div>
         <!-- ====== -->
+
+        <div class="border-2 border-gray-200 border-dashed">
+
+        </div>
         <!-- -----------Right----------- -->
         <div class="calculation-part w-5/12">
           <h2 class="text-xl font-bold pb-3 border-b border-dashed"> Calculation of your Ticket Price </h2>
