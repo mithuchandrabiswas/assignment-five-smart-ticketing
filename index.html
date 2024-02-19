@@ -229,8 +229,8 @@
               <p class="ml-2 text-green-500 font-medium"> Selected </p>
             </div>
           </div>
+          
           <div class="flex justify-end py-3"> <img src="./images/handle.png" alt=""> </div>
-
           <!-- ======Seat Plan===== -->
           <!-- ------Row 1--------- -->
           <div class="flex justify-around items-center gap-1 my-3">
@@ -366,17 +366,16 @@
         </div>
         <!-- ====== -->
 
-        <div class="border-2 border-gray-200 border-dashed">
-
-        </div>
+        <!-- =========Middle========= -->
+        <div class="border-2 border-gray-200 border-dashed"> </div>
         <!-- -----------Right----------- -->
         <div class="calculation-part w-5/12">
-          <h2 class="text-xl font-bold pb-3 border-b border-dashed"> Calculation of your Ticket Price </h2>
+          <h2 class="text-xl font-bold pb-3 border-b border-dashed"> Calculat of your Ticket Price </h2>
           <div class="overflow-x-auto">
             <table class="table bg-slate-50">
               <!-- head -->
               <thead>
-                <tr class="border-b border-dashed border-gray-300">
+                <tr class="border-b border-dashed border-gray-300 font-extrabold text-base">
                   <th> Seat <span id="total-selected-seat" class="badge bg-green-600">0</span> </th>
                   <th> Class </th>
                   <th> Price</th>
@@ -387,19 +386,21 @@
 
               </tbody>
               <tfoot class="tfoot">
-                <tr>
+                <tr class="font-extrabold text-sm">
                   <td> Total Price </td>
                   <td> </td>
-                  <td id="total-price"> 0 </td>
+                  <td> BDT <span id="total-price"> 0 </span> </td>
                 </tr>
-                <div class="relative">
-                  <input type="text" placeholder="have a coupon?" class="input input-bordered w-full max-w-xs xxx" />
-                  <button class="rounded-md btn-sm bg-green-500 absolute top-2 right-28 myBtnClass"> Apply </button>
-                </div>
                 <tr>
+                    <td class="relative" colspan="3"> <input type="text" placeholder="have a coupon?" class="input input-bordered w-full xxx" /> 
+                      <button class="rounded-md btn-sm bg-green-500 absolute top-5 right-8 myBtnClass"> Apply </button>
+                    </td>
+                  
+                </tr>
+                <tr class="font-extrabold text-sm">
                   <td> Grand Total </td>
                   <td> </td>
-                  <td id="grand-total"> 0 </td>
+                  <td > BDT <span id="grand-total"> 0 </span> </td>
                 </tr>
 
               </tfoot>
