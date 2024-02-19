@@ -29,43 +29,38 @@ for (let seatNumber of seatNumbers) {
             console.log(typeof convertedtotalSeatRemaining);
 
             // Total Price Calculate
+            const totalPriceText = document.getElementById('total-price').innerText;
+            const convertedTotalPrice = parseInt(totalPriceText);
+            let totalPrice = selectedArray.length * 550;
+            document.getElementById('total-price').innerText = totalPrice;
+
+            // Grand Total Calculate
+            const grandPriceText = document.getElementById('grand-total').innerText;
+            const convertedGrandTotalPrice = parseInt(grandPriceText);
+            let totalGrandPrice = selectedArray.length * 550;
+            document.getElementById('grand-total').innerText = totalGrandPrice;
 
 
 
-            // const submitBtn = document.getElementById('submit-btn');
-            // console.log(submitBtn);
+            const submitBtn = document.getElementById('submit-btn');
+            console.log(submitBtn);
 
-            // const xxX = document.querySelector('.xxx')
-            // const inputValue = xxX.value;
-            // console.log(inputValue);
+            const xxX = document.querySelector('.xxx')
+            const inputValue = xxX.value;
+            console.log(inputValue);
 
-            // const myBtnClass = document.querySelector('.myBtnClass');
-            // console.log(myBtnClass);
-            // if (inputValue === "NEW15" || inputValue === "Couple 20") {
-            //     myBtnClass.className = "hidden";
-            // }
+            const myBtnClass = document.querySelector('.myBtnClass');
+            console.log(myBtnClass);
+            if (inputValue === "NEW15" || inputValue === "Couple 20") {
+                myBtnClass.classList.remove('hidden');
+            } else {
+                myBtnClass.classList.add('hidden');
+            }
         }
 
 
 
-        // let totalPriceText = document.getElementById('total-price').innerText;
-        // let conTotalPrice = parseInt(totalPriceText);
-        // console.log(typeof conTotalPrice);
-        // let totalPrice = selectedArray.length * 550;
-        // totalPrice.innerText = initotal;
-
-        //     // Current Seat
-        //     const currentSeatNumber = document.getElementById('total-remaining-seat').innerText;
-        //     const convertedCurrentSeatNumber = parseInt(currentSeatNumber)
-        //     console.log(convertedCurrentSeatNumber);
-        //     //available Seat
-        //     const remainingSeat = convertedCurrentSeatNumber - selectedArray.length;
-        //     // 
-        //     currentSeatNumber.innerText = remainingSeat;
-        //     console.log(currentSeatNumber);
-
-
-
+        // Appending Part
         const tBody = document.querySelector('.tbody')
         // console.log(tBody)
         const tr = document.createElement('tr')
@@ -80,24 +75,6 @@ for (let seatNumber of seatNumbers) {
         td1.innerText = selectedSeatNumber;
         td2.innerText = "Economoy";
         td3.innerText = 550;
-
-
-        seatNumber.addEventListener("click", function () {
-            selectedArray.push(selectedSeatNumber);
-            console.log(selectedArray.length);
-
-        })
-
-
-
-
     })
 }
-// function totalP(){
-//     let totalPriceText = document.getElementById('total-price').innerText;
-//     let sum = 1;
-//         let conTotalPrice = parseInt(totalPriceText);
-//         console.log(typeof conTotalPrice);
-//         let totalPrice = selectedArray.length * 550;
-//         totalPrice.innerText = sum;
-// }
+
